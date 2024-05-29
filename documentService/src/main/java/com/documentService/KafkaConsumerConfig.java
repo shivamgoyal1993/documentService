@@ -7,10 +7,16 @@ import org.springframework.kafka.annotation.KafkaListener;
 public class KafkaConsumerConfig {
 
 
-    @KafkaListener(topics = AppConstants.AODOCS_DOCUMENT_TOPIC, groupId = AppConstants.GROUP_ID)
+    @KafkaListener(topics = AppConstants.AODOCS_DOCUMENT_TOPIC, groupId = AppConstants.AODOCS_GROUP_ID)
     public void getDocuments(String value) {
 
-        System.out.println("Received aodocs document: " + value);
+        System.out.println("Received aodocs documents: " + value);
+    }
+
+    @KafkaListener(topics = AppConstants.ACCORD_DOCUMENT_TOPIC, groupId = AppConstants.ACCORD_GROUP_ID)
+    public void getContracts(String value) {
+
+        System.out.println("Received accord contracts: " + value);
     }
 
 }

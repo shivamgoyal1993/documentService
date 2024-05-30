@@ -1,0 +1,13 @@
+version: '2'
+services:
+  db:
+    image: mysql:8.0.27
+    ports:
+      - 3306:3306
+    environment:
+      #DATABASE_HOST: docker-mysql
+      #DATABASE_PORT: 3306
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: documentdb
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root

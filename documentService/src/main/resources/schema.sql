@@ -1,0 +1,5 @@
+--CREATE TABLE if not exists DocumentMetadata(
+--document_id int not null PRIMARY KEY,
+--document_data varchar(255),
+--source varchar(255)
+--);

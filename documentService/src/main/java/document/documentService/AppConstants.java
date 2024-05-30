@@ -1,4 +1,4 @@
-package com.documentService;
+package document.documentService;
 
 public class AppConstants {
 
